@@ -1,0 +1,3 @@
+data:
+  fraud_data_file: "{PROJECT_ROOT_PATH}/data/Fraud_Data.csv"
+  ip_country_file: "{PROJECT_ROOT_PATH}/data/IpAddress_to_Country.xlsx"

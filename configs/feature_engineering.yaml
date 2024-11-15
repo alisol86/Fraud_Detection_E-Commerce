@@ -1,0 +1,17 @@
+column_to_drop: 'Unnamed: 0'
+fraud_spike_period:
+  start_date: '2015-01-01'
+  end_date: '2015-01-13'
+country_risk_category:
+  high_threshold: 0.9
+  low_threshold: 0.7
+categorical_features: ['source', 'browser', 'country_risk_category']
+selected_features: ['purchase_value', 'sex', 'age', 'in_fraud_spike_period',
+                    'time_to_purchase', 'user_count_per_device', 'n_ip_shared',
+                    'source_Ads', 'source_Direct', 'source_SEO', 
+                    'browser_Chrome', 'browser_FireFox', 'browser_IE', 'browser_Opera', 'browser_Safari',
+                    'country_risk_category_High-Risk', 'country_risk_category_Low-Risk', 'country_risk_category_Mid-Risk',
+                    'class']
+correlation_analysis:
+  column_to_drop: 'n_ip_shared'
+features_to_scale: ['time_to_purchase', 'purchase_value', 'age', 'user_count_per_device']
